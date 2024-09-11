@@ -34,9 +34,3 @@ jobs:
         run: |
           docker build -t javatechie/devops-integration .
           docker push javatechie/devops-integration
-
-      - name: Deploy to Kubernetes
-        run: |
-          kubectl apply -f deploymentservice.yaml
-        env:
-          KUBECONFIG: ${{ secrets.KUBECONFIG }}
