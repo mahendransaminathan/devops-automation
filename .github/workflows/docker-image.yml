@@ -33,4 +33,4 @@ jobs:
       - name: Build and push Docker image
         run: |
           docker build -t javatechie/devops-integration .
-          docker push javatechie/devops-integration
+          docker push mahendransaminathan/saminathan
